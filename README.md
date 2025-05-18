@@ -8,7 +8,7 @@ Mettre en œuvre l'ORM avec **JPA/Hibernate** et **Spring Data JPA** pour créer
 ## Introduction
 Ce projet est une application de gestion d’un hôpital, développée dans le cadre d’une activité pratique dirigée par **Mohamed Youssfi**. L'objectif est de mettre en œuvre une architecture complète utilisant **Spring Boot**, **JPA**, **Hibernate**, **Spring Data**, et **REST API**, afin de modéliser des entités comme les `Patients`, `Médecins`, `RendezVous`, et `Consultations`.
 
-L’application commence avec une base de données embarquée H2, puis migre vers **MySQL** pour un usage plus réaliste.
+L’application commence avec une base de données, puis migre vers **MySQL** pour un usage plus réaliste.
 
 ---
 
@@ -61,7 +61,7 @@ Voici une vue complète de l’architecture du projet :
 Structure du projet :
 
 ```plaintext
-ma.enset.hospital
+ma.habbaz.hospital
 │
 ├── entities             -> Contient toutes les classes JPA (modèle de données)
 │   ├── Patient.java
@@ -144,15 +144,9 @@ Implémente la logique métier de l’application.
 Expose les services via des endpoints REST.
 
 - PatientRestController: Fournit des API REST pour manipuler les entités (GET, POST, DELETE, etc.).
-  ![](src/main/captures/photo17.png)
-
-### ✅ Exemple de résultat JSON depuis l'endpoint `/patients`
-![](src/main/captures/photo20.png)
-
 
 > HospitalApplication
 Classe principale annotée avec @SpringBootApplication. Elle exécute le code au démarrage et permet d’injecter des données de test
-![](src/main/captures/photo18.png)
 ![](src/main/captures/photo19.png)
 
 
@@ -166,10 +160,7 @@ Configurez la base de données H2 dans `src/main/resources/application.propertie
 ##### Accès à la console H2 :
 ![](src/main/captures/photo22.png)
 ![](src/main/captures/photo23.png)
-![](src/main/captures/photo24.png)
-![](src/main/captures/photo25.png)
 ![](src/main/captures/photo26.png)
-![](src/main/captures/photo27.png)
 
 
 ### 5. Migration de H2 vers MySQL
@@ -178,29 +169,13 @@ Configurez la base de données H2 dans `src/main/resources/application.propertie
 
 ![](src/main/captures/photo29.png)
 
-- La table patient
-
-![](src/main/captures/photo30.png)
-
-- La table medecin
-
-![](src/main/captures/photo31.png)
-
-- La table rendz-vous
-
-![](src/main/captures/photo32.png)
-
-- La table consultation
-
-![](src/main/captures/photo33.png)
 
 ## Conclusion
 Ce projet nous a permis de comprendre la puissance de l’écosystème Spring Boot dans la gestion d’une application métier complexe avec persistance de données. Grâce à JPA, Hibernate, et Spring Data, le code est plus clair, concis et performant. Il ouvre également la porte vers des applications plus évoluées avec Spring Security, Thymeleaf, ou encore React/Angular en front-end.
 
 ## Remerciements
 Merci à M. Mohamed Youssfi pour ses explications claires et ses vidéos très pédagogiques.
-https://www.youtube.com/watch?v=cz3p4y7tUEs
-## Auteur
-Réalisé par : [EL AMRANI SARA]
 
-Date : [Mars 2025]
+## Auteur
+Réalisé par : HABBAZ MOHAMED
+
